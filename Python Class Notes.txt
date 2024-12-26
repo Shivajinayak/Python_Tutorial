@@ -1,0 +1,1798 @@
+
+About Python :
+========================================================
+Python is an interpreted, highlevel and general purpose programming language.
+
+Python :
+-----------
+Intrepreted language 
+Line by line - Execution
+
+
+Java/ c / c++:
+----------
+compile programming language
+
+
+
+
+What can we do with python:
+=========================================================
+1. Data engineers:
+	ETL process 
+	Big Data 
+	
+2. Data Science / Analysis:
+	Data analysis: Pandas, Numpy, scipy
+	Data visualition: matplotlib, seaborn, plotly
+	Machine learning: scikit-learn, tensorflow, pytorch 
+	
+3. Web development:
+	Back end : Django, flask, 
+	webscraping: beautifulsoap, scrapy, selenium.
+	
+	Instagram : (backend)
+	Youtube: 
+	spotify: 
+	
+4. Automation and scripting:
+
+5. Software development:
+	Game development: PyGame
+	GUI Development: 
+	
+6. Networking:
+	Web requests : https 
+	socket programming: socket
+	
+
+How to install python3 :
+=============================================
+
+CMD :
+	python 
+Python shell
+
+
+
+
+variables:
+=============================================
+1. Variables are used to store information that can be referenced and manipulated in a programm.
+2. Python variables are dynamically typed, That means, You don't need to declare their type explicitly.
+
+
+
+
+a = 10
+
+a: Variable 
+10: data or value
+=: operator
+
+
+Java /scala 
+-----------------
+int a = 10;
+a: int = 10;
+
+Data Types:
+==================================================
+Int,
+str,
+bool,
+float,
+Complex datatypes:
+
+	list,
+	tuple,
+	set,
+	dict
+
+
+Int :
+----------------
+>>> a = 10
+>>> type(a)
+<class 'int'>
+>>> b = 200
+>>> type(b)
+<class 'int'>
+>>> c = -55
+>>> type(c)
+<class 'int'>
+>>> 10+20
+30
+>>> a+b
+210
+>>> a+b+c
+155
+>>> d = a+b+c
+>>> d
+155
+>>> type(d)
+<class 'int'>
+
+
+Float 
+------------------
+>>> a = 24.5
+>>> type(a)
+<class 'float'>
+>>> b = 30.5
+>>> b
+30.5
+>>> type(b)
+<class 'float'>
+>>> c = a+b
+>>> c
+55.0
+>>> type(c)
+<class 'float'>
+
+Data Type convert:
+----------
+Float to int 
+	
+	>>> d = int(c)
+	>>> d
+	55
+	>>> type(c)
+	<class 'float'>
+	>>> type(d)
+	<class 'int'>
+	
+Float to string
+	>>> e = str(c)
+	>>> type(e)
+	<class 'str'>
+	
+Float to bool 
+	>>> f = bool(c)
+	>>> type(f)
+	<class 'bool'>
+	
+	
+Str data type:
+-------------------
+string value is defined by '' or ""
+
+>>> a = 'Mr.Techi Talks'
+>>> a
+'Mr.Techi Talks'
+>>> type(a)
+<class 'str'>
+>>> b = "Ms.Techie Talks"
+>>> type(b)
+<class 'str'>
+>>> z = "dsfsakhdflsdhafeihlfkahdslkfha"
+>>> type(z)
+<class 'str'>
+>>> print(z)
+dsfsakhdflsdhafeihlfkahdslkfha
+>>> print(a)
+Mr.Techi Talks
+>>> print(b)
+Ms.Techie Talks
+>>> a = 10
+>>> type(a)
+<class 'int'>
+>>> a = '10'
+>>> type(a)
+<class 'str'>
+>>> 10 + 20
+30
+>>> '10'+'20'
+'1020'
+>>> first_name = 'Aadhya'
+>>> Last_name = 'G'
+
+>>> print(full_name)
+AadhyaG
+>>> full_name = first_name + ' ' + Last_name
+>>> print(full_name)
+Aadhya G
+
+
+Sting type conversion
+	>>> a = '10'
+	>>> b = '20'
+	>>> c = a+b
+	>>> type(c)
+	<class 'str'>
+	>>> c
+	'1020'
+	>>> d = int(a) + int(b)
+	>>> d
+	30
+	>>> type(d)
+	<class 'int'>
+
+	>>> e = float(a) + float(b)
+	>>> e
+	30.0
+	>>> type(e)
+	<class 'float'>
+
+Bool Data Type:
+-----------------------------------------------
+True or False
+	>>> a = False
+	>>> a
+	False
+	>>> type(a)
+	<class 'bool'>
+	>>> b = True
+	>>> b
+	True
+	>>> type(b)
+	<class 'bool'>
+	>>> 1 == 2
+	False
+	>>> 1 == 1
+	True
+	
+List :
+===================================
+It is a data type & built in data structure that allows you to store collection of items in a single variable.
+1. List are ordered
+2. It is mutable
+3. It contains elements of diffrent data type, including their list
+
+
+eg: 
+
+	a = [1,2,3,4,5]
+
+	a = [1,'aadhya',Flase, [34,35,36]]
+
+Methods :  method can midify existing list.
+--------
+	append():
+		It is used to add an elements to the end of the list.
+		a.append(10)
+		
+		eg:
+			>>> a = [1,2,3,4,5]
+			>>> a
+			[1, 2, 3, 4, 5]
+			>>> a.append(10)
+			>>> a
+			[1, 2, 3, 4, 5, 10]
+		
+	extend():
+		it extends the list by appending elements from an iterable.
+		eg:
+			>>> a = [1,2,3]
+			>>> b = [9,10]
+			>>> a.extend(b)
+			>>> a
+			[1, 2, 3, 9, 10]
+		
+	insert():It inserts an item of the given position.
+		eg:
+			>>> a = [1,2,3]
+			>>> a
+			[1, 2, 3]
+			>>> a.insert(2,'mr techie talks')
+			>>> a
+			[1, 2, 'mr techie talks', 3]
+	
+	remove():
+		It removes the first occurance of an item.
+		eg:
+			>>> a.remove(3)
+			>>> a
+			[1, 2, 4]
+			>>> a = [1,2,3,2,4]
+			>>> a
+			[1, 2, 3, 2, 4]
+			>>> a.remove(2)
+			>>> a
+			[1, 3, 2, 4]
+	pop():
+		Removes & returns the item at the given position.  If no index is specified it remves and returns last item.
+		a = [1,3,5,7]
+		b = a.pop(2) # 5 delete
+		
+		b = a.pop()  # 7 delte
+		
+		eg:
+			>>> a
+			[1, 3, 2, 4]
+			>>> a = [1,3,5,7]
+			>>> a
+			[1, 3, 5, 7]
+			>>> b = a.pop(2)
+			>>> b
+			5
+			>>> a
+			[1, 3, 7]
+			>>> b = a.pop()
+			>>> b
+			7
+			>>> a
+			[1, 3]
+		
+	clear():
+		it removes all items from the list.
+		eg:
+			>>> a
+			[1, 2, 3, 4, 5]
+			>>> a.clear()
+			>>> a
+			[]
+			
+	index():
+		It returns the index of the first occurance of an item. Raises a 'valueError' if the item is not found.
+		eg:
+			>>> a = ['apple','banana','orange']
+			>>> a
+			['apple', 'banana', 'orange']
+			>>> a.index('orange')
+			2
+			>>> a = ['a','b','o','a']
+			>>> a
+			['a', 'b', 'o', 'a']
+			>>> a.index('a')
+			
+	sort():
+		Sorts the items of the list inplace.
+		eg:
+			>>> a = [1,5,4,6,9,2]
+			>>> a
+			[1, 5, 4, 6, 9, 2]
+			>>> a.sort()
+			>>> a
+			[1, 2, 4, 5, 6, 9]
+			>>> a.sort(reverse=False)
+			>>> a
+			[1, 2, 4, 5, 6, 9]
+			>>> a.sort(reverse=True)
+			>>> a
+			[9, 6, 5, 4, 2, 1]
+			
+	reverse(): It will reverse the entire list 
+		eg:
+			>>> a = [1,3,5,4,3]
+			>>> a
+			[1, 3, 5, 4, 3]
+			>>> a.reverse()
+			>>> a
+			[3, 4, 5, 3, 1]
+	
+	copy(): It returns a shollow copy of the list.
+		eg:
+			>>> a
+			[3, 4, 5, 3, 1]
+			>>> b = a.copy()
+			>>> b
+			[3, 4, 5, 3, 1]
+
+
+Functions: functions can't modify existing list.
+-------
+	len(): It will find length of the list.
+		len(a)
+	
+	max(): it will take maximum item from the list.
+		max(a)
+	min()
+	sorted()
+	list(tuple)
+	
+	Eg:
+		>>> a = [1,3,5,7,9]
+		>>> a
+		[1, 3, 5, 7, 9]
+		>>> len(a)
+		5
+		>>> max(a)
+		9
+		>>> min(a)
+		1
+		>>> sorted(a)
+		[1, 3, 5, 7, 9]
+		>>> a
+		[1, 3, 5, 7, 9]
+		>>> sorted(a,reverse=True)
+		[9, 7, 5, 3, 1]
+		>>> a
+		[1, 3, 5, 7, 9]
+		>>> b = sorted(a, reverse=True)
+		>>> a
+		[1, 3, 5, 7, 9]
+		>>> b
+		[9, 7, 5, 3, 1]
+		>>> a = (1,2,3,4)
+		>>> type(a)
+		<class 'tuple'>
+		>>> list(a)
+		[1, 2, 3, 4]
+		>>> type(a)
+		<class 'tuple'>
+		>>> b = list(a)
+		>>> type(b)
+		<class 'list'>
+
+Slicing:
+	You can access a range of elements/items in a list using sclicing.
+	
+	
+[3, 4, 5, 7, 1, 2, 10]     <- Elements in List 
+ 0  1  2  3  4  5   6      <- Index postions
+ 
+Eg:
+	>>> a = [3,4,5,7,1,2,10]
+	>>> a
+	[3, 4, 5, 7, 1, 2, 10]
+	>>> a[0]
+	3
+	>>> a[3]
+	7
+	>>> a[6]
+	10
+	>>> a[5]
+	2
+	>>> a[0:1]
+	[3]
+	>>> a[0:2]
+	[3, 4]
+	>>> a[0:2]
+	[3, 4]
+	>>> a[1:3]
+	[4, 5]
+	>>> a[1:6]
+	[4, 5, 7, 1, 2]
+	>>> a[1:]
+	[4, 5, 7, 1, 2, 10]
+	>>> a[:4]
+	[3, 4, 5, 7]
+	>>> a[-1]
+	10
+	>>> a[-2]
+	2
+	>>> a[-7]
+	3
+	>>> a[-5]
+	5
+ 
+list : []  - Square brackets
+tuple: ()  - paranthesis
+set  : {}  - curly braces
+dict : {}  - curly braces 
+ 
+Tuple :
+===================================
+1. Tuple is immutable, ordered collection of elements.
+2. Tuples are similar to lists, But the can't be changes after their creation.
+
+
+my_type = (1,2,3,4,5,6)
+eg:
+		>>> t = (1,2,3,4)
+		>>> t
+		(1, 2, 3, 4)
+		>>> t1 = (1)
+		>>> t1
+		1
+		>>> type(t1)
+		<class 'int'>
+		>>> t1 = (1,)
+		>>> type(t1)
+		<class 'tuple'>
+		>>> t2 = ('mr techi talks','surendra')
+		>>> type(t2)
+		<class 'tuple'>
+		>>> t2[0]
+		'mr techi talks'
+		>>> t2[1]
+		'surendra'
+		>>>
+
+Methods:
+---------
+	count(): it count how many elemnts found in tuple with given number.
+		t = (1,2,3,4,5,2,2,3,3,3)
+		
+		count = t.count(3) # 4
+		count = t.count(2) # 3
+		count = t.count(5) # 1
+		
+		eg: 
+			>>> count = t.count(3)
+			>>> count
+			4
+			>>> count = t.count(2)
+			>>> count
+			3
+			>>> count = t.count(5)
+			>>> count
+			1
+			>>> count = t.count(6)
+			>>> count
+			0
+		
+	index(): index()  method is used to find the index of given first occurance element.
+		
+		eg:
+			>>> t = (1,2,3,4,5,2,2,3,3,3)
+
+			>>> ind = t.index(2)
+			>>> ind
+			1
+			>>> ind = t.index(5)
+			>>> ind
+			4
+	
+Functions:
+----------
+		>>> len(t)
+		10
+		>>> max(t)
+		5
+		>>> min(t)
+		1
+		>>> sum(t)
+		28
+		>>> sorted(t)
+		[1, 2, 2, 2, 3, 3, 3, 3, 4, 5]
+		>>> sorted(t, reverse=True)
+		[5, 4, 3, 3, 3, 3, 2, 2, 2, 1]
+		>>> sorted(t, reverse=False)
+		[1, 2, 2, 2, 3, 3, 3, 3, 4, 5]
+
+	
+
+Tuple operations:
+----------------
+	>>> t = (1,2,3)
+	>>> t2 = (3,4,5)
+	>>> t3 = t+t2
+	>>> t3
+	(1, 2, 3, 3, 4, 5)
+	>>> t4 = t*2
+	>>> t4
+	(1, 2, 3, 1, 2, 3)
+	>>> t4 = t*3
+	>>> t4
+	(1, 2, 3, 1, 2, 3, 1, 2, 3)
+
+Slicing:
+----------
+	>>> t4
+	(1, 2, 3, 1, 2, 3, 1, 2, 3)
+	>>> t4[0]
+	1
+	>>> t4[2]
+	3
+	>>> t4[2:]
+	(3, 1, 2, 3, 1, 2, 3)
+	>>> t4[2:4]
+	(3, 1)
+	
+	
+set: {}
+======================
+1. Set is a unordered collection of unique elements.
+2. Set doesn't follow order.
+3. Set doesn't allow duplicates.
+4. It is mutable.
+
+a = {1,2,3,4}
+	eg:
+		>>> a = {1,2,3,4}
+		>>> a
+		{1, 2, 3, 4}
+		>>> type(a)
+		<class 'set'>
+		>>> a
+		{1, 2, 3, 4}
+		>>> a
+		{1, 2, 3, 4}
+		>>> a
+		{1, 2, 3, 4}
+		>>> a
+		{1, 2, 3, 4}
+		>>> c = {10, 9, 5, 4,6}
+		>>> c
+		{4, 5, 6, 9, 10}
+		>>> c
+		{4, 5, 6, 9, 10}
+		>>> c  = {1,2,3,4,4,4,4,4,4,3,3,3,1,2,2,2,1}
+		>>> c
+		{1, 2, 3, 4}
+
+
+Set Methods:
+-------------
+	add():
+		a = {'a','o','b'}
+		>>> a.add("g")
+		>>> a
+		{'g', 'a', 'o', 'b'}
+		
+	
+	update():
+		>>> a.update(['c','d'])
+		>>> a
+		{'g', 'c', 'd', 'a', 'o', 'b'}
+	
+	remove()
+	
+	dicard():
+		eg:
+			>>> a
+			{'g', 'c', 'd', 'a', 'o'}
+			>>> a.remove('b')
+			Traceback (most recent call last):
+			  File "<stdin>", line 1, in <module>
+			KeyError: 'b'
+			>>> a.discard('b')
+			>>> a
+			{'g', 'c', 'd', 'a', 'o'}
+			>>> a.discard('d')
+			>>> a
+			{'g', 'c', 'a', 'o'}
+	
+	pop() 
+	
+	clear():
+			>>> a
+			{'g', 'c', 'a', 'o'}
+			>>> a.pop()
+			'g'
+			>>> a
+			{'c', 'a', 'o'}
+			>>> a.clear()
+			>>> a
+			set()
+			>>>
+
+	
+	union():
+		>>> a = {1,2,3}
+		>>> b = {3,4,5}
+		>>> c = a.union(b)
+		>>> c
+		{1, 2, 3, 4, 5}
+	
+	intersection():
+		>>> c = a.intersection(b)
+		>>> c
+		{3}
+	
+	insection_update():
+	>>> a.intersection_update(b)
+	>>> a
+	{3}
+	
+	difference()
+	
+	diffrence_update():
+		>>> a = {1,2,3}
+		>>> b = {3,4,5}
+		>>> c = a.difference(b)
+		>>> c
+		{1, 2}
+		>>> a.difference_update(b)
+		>>> a
+		{1, 2}
+	
+	symmetric_difference()
+	
+	symmetric_difference_update():
+		>>> a = {1,2,3}
+		>>> b = {3,4,5}
+		>>> c = a.symmetric_difference(b)
+		>>> c
+		{1, 2, 4, 5}
+		
+		>>> a.symmetric_difference_update(b)
+		>>> a
+		{1, 2, 4, 5}
+		
+	
+	issubset(): it returns true, If the set a is subset of set b.
+		>>> a = {1,2,3}
+		>>> b = {1,2,3,4,5}
+		>>>
+		>>> a.issubset(b)
+		True
+		>>> b.issubset(a)
+		False
+		
+	issupserset(): It returns true, If the set a is super set of set b.
+		>>> a = {1,2,3}
+		>>> b = {1,2,3,4,5}
+		
+		>>> a.issuperset(b)
+		False
+		>>> b.issuperset(a)
+		True
+	isdisjoint(): Returns True, if  set has no elements in common with another set 
+		>>> a = {1,2,3}
+		>>> b = {1,2,3,4,5}
+		>>> a.isdisjoint(b)
+		False
+		>>> a = {1}
+		>>> b = {2}
+		>>> a.isdisjoint(b)
+		True
+	
+
+
+set Functions:
+--------------
+	>>> a = {1,2,3,5,2,1,3}
+	>>> len(a)
+	4
+	>>> a
+	{1, 2, 3, 5}
+	>>> max(a)
+	5
+	>>> min(a)
+	1
+	>>> sum(a)
+	11
+	>>> sorted(a)
+	[1, 2, 3, 5]
+	>>> sorted(a, reverse=True)
+	[5, 3, 2, 1]
+	
+Dict: {}
+====================================
+1. Dictonary is a built in datatype that stored collection of key values paoits
+2. Each key is unique. and it is used to access corresponding values.
+3. dict are mutable. We can change, add , remove, itesm in the dictonary.
+  Python 3.7 : python dict is ordered. 
+
+4. key value pairs are created with colon(:)
+
+eg: 
+	my_dict = {'k':'v', 'k1':'v1'}
+		
+	>>> my_dict = {'id':1,'name':'mr techie talks'}
+	>>> my_dict
+	{'id': 1, 'name': 'mr techie talks'}
+	>>> my_dict['id']
+	1
+	>>> my_dict['name']
+	'mr techie talks'
+	>>> my_dict[0]
+	
+
+Dict Methods:
+-------------
+	clear(): remove all elements in dict.
+		>>> my_dict
+		{'id': 1, 'name': 'mr techie talks'}
+		>>> my_dict.clear()
+		>>> my_dict
+		
+	copy():
+		>>> a = {1:'1',2:'3'}
+		>>> a
+		{1: '1', 2: '3'}
+		>>> b = a.copy()
+		>>> b
+		{1: '1', 2: '3'}
+		
+	fromkeys(): creates a new dictonary with keys from 'seq' and values set to value.
+		
+		b = dict.fromkeys(('id','name'),'4')
+		
+		>>> a = ('id','name')
+		>>> b = dict.fromkeys(a,None)
+		>>> b
+		{'id': None, 'name': None}
+		>>> b = dict.fromkeys(a)
+		>>> b
+		{'id': None, 'name': None}
+		>>> b = dict.fromkeys(a,'4')
+		>>> b
+		{'id': '4', 'name': '4'}
+		>>>
+		
+	get(): Returns values of spcified key, if the key doesn't exists, Returns dafault values.
+		>>> c = b.get('age',0)
+		
+	items():
+		>>> a = {'id':'1','name': 'mr.techie talks'}
+		>>> a
+		{'id': '1', 'name': 'mr.techie talks'}
+		>>> a.items()
+		dict_items([('id', '1'), ('name', 'mr.techie talks')])
+		>>>
+	keys():
+		>>> a.keys()
+		dict_keys(['id', 'name'])
+		
+	values()
+		a.values()
+		dict_values(['1', 'mr.techie talks'])
+	pop():
+		>>> a
+		{'id': '1', 'name': 'mr.techie talks'}
+		>>> a.pop('id')
+		'1'
+	
+	
+	popitems():
+		>>> a = {'id':'1','name': 'mr.techie talks'}
+		>>> a.popitem()
+		('name', 'mr.techie talks')
+		>>> a
+		{'id': '1'}
+	setdefault()
+		>>> a = {'id':1,'name':'Mr.Techie Talks'}
+		>>> a
+		{'id': 1, 'name': 'Mr.Techie Talks'}
+		>>> a.setdefault('country','india')
+		'india'
+		>>> a
+		{'id': 1, 'name': 'Mr.Techie Talks', 'country': 'india'}
+		>>>
+		
+	update():
+		>>> a
+		{'id': 1, 'name': 'Mr.Techie Talks', 'country': 'india'}
+		>>> b = {'age':30,'gender':'Male'}
+		>>> a.update(b)
+		>>> a
+		{'id': 1, 'name': 'Mr.Techie Talks', 'country': 'india', 'age': 30, 'gender': 'Male'}
+		>>> b
+		{'age': 30, 'gender': 'Male'}
+		>>> a
+	
+	
+Dict Functions:
+---------------
+	>>> len(a)
+	5
+	>>> max(a)
+	'name'
+	>>> min(a)
+	'age'
+	>>> sum(a)
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	TypeError: unsupported operand type(s) for +: 'int' and 'str'
+	>>> sorted(a)
+	['age', 'country', 'gender', 'id', 'name']
+	>>> sorted(a,reverse=True)
+	['name', 'id', 'gender', 'country', 'age']
+		
+Statements:
+======================================
+
+if:
+-----------
+An 'if' statement is a control flow statement that allows you to execute a block of code only, if a specific condition is true.
+
+Eg:
+	age = 100
+
+	if age >= 18:
+		print("You are adult!")
+	
+
+if else:
+-----------
+We can use else clause to specify a block of code to be executed, If the condition is false.
+
+Eg:
+	age = 100
+	if age >= 18:
+		print("You are an adult!")
+		print("Your age is : ",age)
+	else:
+		print("You are not an adult!")
+		print("Your age is : ",age)
+
+
+if-elif-else:
+-------------
+For multiple conditions, you can use elif(short for else if) to check additional condition, If previous one is false.
+
+Eg: 
+	age = 15
+
+	if age < 13:
+		print("You are a child!")
+	elif 13 <= age < 18:
+		print("You are teenager!")
+	else:
+		print("you are an adult!")
+
+
+
+Nested if:
+-----------
+
+Eg:
+	a = 55
+
+	if a > 5: #outer if
+		if a > 12: #inner if condition
+			print("a is greater than 12")
+		else:
+			print("a is less than 12 and greater than 4")
+	else:
+		print("a is lesser than 5")
+	
+
+
+Loops in Python
+=======================
+	while:
+	---------------
+	1. When we want to repeat a block of code as long as a condition is True.
+	2. This is useful when the number of iterations is not know in advance & depends on dynamic conditions.
+	
+	
+	syntax :
+	while condition:
+		statements
+		
+	Eg: 
+		a = 1
+		while a <= 10:
+			print("hello world!")
+			print(a)
+			a += 1
+
+	Eg:
+		password = ''
+
+		while password != 'MrTechieTalks':
+			print(password)
+			password = input("Enter the password:")
+
+		print("Access Granted!")
+	
+		
+	Eg:
+		# print 1 to 10 except 5
+
+		a = 0
+		while a <= 10:
+			if a != 5:
+				print(a)
+			a += 1
+			
+	for:
+	------------------
+	1. We use 'for' loop, When we know in advance how many times you need to execute a block of code.
+	2. When we are iterating over a sequence (list, tuple,string,range, set )
+	
+	a = [1,2,3,4,5]
+	for i in a:
+		print(i)
+	
+	
+	b = ('o','a','b','g')
+	for item in b:
+		print(item)
+	
+	
+	name = 'Mr.TechieTalks'
+	for char in name:
+		print(char)
+	
+	
+	values = range(0,1001)
+	for i in values:
+		print(i)
+		
+	my_set = {'orange','banana','apple','grapes'}
+	for item in my_set:
+		print(item)
+		
+	Eg:
+		l1 = [1,2,3,4,5]
+		l2 = []
+
+		for item in l1:
+			value = item*item
+			l2.append(value)
+
+		print(l2)
+	
+	
+User Inputs:
+=======================================
+Eg1:
+	# sum of two numbers
+	a = int(input("Enter value a: "))
+	b = int(input("Enter value b: "))
+
+	c = a+b
+	print("Sum of two numbers : ",c)
+	print("Multiply of two numbers : ",a*b)
+
+Eg2:
+	password = ''
+
+	while password != 'MrTechieTalks':
+		password = input("Enter Gmail Password:")
+
+	print("Access Granted!")
+
+
+
+
+Comments:
+====================================
+	Comments are used to annotate the code, Making it easier to unstand.
+	Comments are ignored by the python interpreter.
+	
+1. Single Line Comment:
+-----------------------
+	Single line starts with '#' symbol.
+	
+	x = 10  #assigning value 10 to varaible x
+
+
+
+2. Multiline Comments:
+------------------------
+	Python doesn't have specfic syntax for multiline comments like some other language.
+	
+	# use hash symbol for each line 
+			(or )
+			
+	use multi line string ('''  (or)   """)
+
+
+
+Functions:
+============================================================
+1. In Python, a function is a block of organized, reusable code that performs a single, related action.
+2. It will allow us to encapsulate logic, making the code more managable and readable.
+3. Function is defined using the 'def' keyword, followed by function name, parantheses '()' and a colon:
+4. Function body contains the code to be executed and indented.
+
+
+Eg:
+	def add(c,d):
+		e = c+d
+		print(e)
+		
+	c = 10 
+	d = 20
+	add(c, d)
+
+
+Funtion  - No parameter & No return value 
+------------------------------------------
+def add():
+    a = 10
+    b = 20
+    c = a+b
+    print("sum of two number : ", c)
+
+add()
+
+
+Funtion  - with parameters & No return value 
+------------------------------------------
+def add(a,b):
+    c = a+b
+    print("Sum of two numbers is : ", c)
+
+a = 10 
+b = 30
+add(a,b)
+
+
+Funtion  - No parameters & with return value 
+------------------------------------------
+def add():
+    a = 10
+    b = 20
+    c = a + b
+    return c
+
+result = add()
+print("sum of two numers: ",result)
+
+
+Funtion  - with parameters & with return value 
+------------------------------------------
+
+def add(a,b):
+    c = a+b
+    return c 
+
+a = 10
+b = 50
+
+result = add(a,b)
+print("Sum of two numbers : ",result)
+
+Arguments:
+=============================================
+
+
+def add(a,b,c,d,e,f,g,h,i,j)
+
+Positional arguments:
+----------------------
+
+
+def greet(name,age, gender):
+	print("hello, My name is", name)
+	print(f"I am {age} years old")
+	
+greet('Mr.TechieTalks', 30, 'Male')
+	
+
+
+Keyword arguments:
+---------------------------
+def greet(name,age, gender):
+	print("hello, My name is", name)
+	print(f"I am {age} years old")
+	
+greet(age = 30, gender='Male', name = 'Mr.TechieTalks')
+
+
+default arguments:
+-----------------------------
+def greet(name, age= 30):
+	print("hello, My name is", name)
+	print(f"I am {age} years old")
+
+
+greet('Mr.TechieTalks')
+greet('Mr.TechieTalks', 40)
+
+
+
+variable length arguments: - Arbitory Arguments
+=============================
+	*args (Non-Keyword variable arguments):
+	---------------------------------------
+	Input: tuple, set, list 
+	
+	
+	def sum_numbers(*args):
+		output = sum(*args)
+		print(output)
+		
+	my_tuple = (1,2,3,4)
+	sum_numbers(my_tuple)
+
+	my_tuple = (1,2,3,4,6,7,8,89)
+	sum_numbers(my_tuple)
+
+	my_list = [2,3,4,5,6]
+	sum_numbers(my_list)
+
+	my_set = {2,3,4,5,6,7}
+	sum_numbers(my_set)
+	
+	**kwargs (Keyword variable arguments):
+	--------------------------------------
+	Input: Dict 
+	
+	def print_details(**kwargs):
+		for key,value in kwargs.items():
+			print(f"{key}:{value}")
+
+	my_dict = {
+		"name": 'Mr.TechieTalks',
+		'age' : 30,
+		'gender': 'Male',
+		'address': 'Hyderabad'
+	}
+
+	print_details(**my_dict)
+	print_details(name='Bob', age='40')
+
+	
+Lambda Functions:
+================================================
+1. In Python, A 'lambda' function is a small, anynomous function defined with the 'lambda' keyword
+2. function can have any number of arguments but it can contain a single expression.
+3. Lambda functions are used for short and simple operations that are passed as argument to higher order function like map(), filter(), sorted()
+
+
+
+square = lambda x: x*x
+
+Eg:
+	square = lambda x: x*x
+	x = 10
+	print(square(x))
+
+	add = lambda x,y : x+y
+	print(add(10,20))
+
+
+map():
+-------
+eg:
+	number = [1,2,3,4,5,6,7,8,9,10]
+	output = map(lambda x: x*2, number)
+	print(list(output))
+
+
+filter():
+---------
+Eg:
+	numbers = [1,2,3,4,5,6,7,8,9,10]
+
+	even_numbers = filter(lambda x: x%2 == 0, numbers)
+	print(list(even_numbers))
+
+	odd_numbers = filter(lambda x: x%2 != 0, numbers)
+	print(list(odd_numbers))
+
+	#> 5 elements
+	output = filter(lambda x: x>5, numbers)
+	print(list(output))
+
+
+sorted():
+----------
+Eg;
+	points = [(1,2),(3,1),(5,-1),(2,3)]
+
+	sorted_points = sorted(points, key = lambda x: x[0])
+	print(list(sorted_points))
+
+	sorted_points = sorted(points, key = lambda x: x[1], reverse=True)
+	print(list(sorted_points))
+	
+	
+Local Scope & Global Scope    
+================================
+
+	a = 10
+
+	Local variable:
+	------------------
+		Local variables are created in function.
+		
+		Eg:
+			a = 50  # Global variable
+			b = 30  # Global variable
+
+			def add():
+				x = 10  # Local Variable
+				y = 20  # Local Variable
+				print(x+y)
+				print(a+b)
+
+			add()
+			print(a*b)
+
+	
+	Global variable:
+	----------------
+		global variables are created outside the function.
+		
+		
+		Eg:
+			a = 50  # Global variable
+			b = 30  # Global variable
+
+			def add():
+				x = 10  # Local Variable
+				y = 20  # Local Variable
+				print(x+y)
+				print(a+b)
+
+			add()
+			print(a*b)
+			
+
+Modules:
+=================================================
+
+When we write 1000 of lines code in one file, it is difficult to maintain.
+Module is a file containing python code, that defines functions, class, variables
+
+custom module:
+--------------------
+	calculator.py 
+	-----------
+	def add(x,y):
+		return x+y
+	
+	def sub(x,y):
+		return x-y
+	
+	def mul(x,y):
+		return x*y
+		
+	def div(x,y):
+		return x/y 
+		
+	
+	
+	main.py
+	--------
+	import calculator
+	
+	print(calculator.add(100,40))
+	print(calculator.sub(100,40))
+	print(calculator.mul(100,40))
+	print(calculator.div(100,40))
+	
+	
+
+predefined module :
+--------------------
+datetime
+math 
+paramiko
+numy 
+
+
+eg:
+	import datetime # datetime is file
+	import platform
+
+	current_time = datetime.datetime.now()
+	print(current_time)
+
+	print(platform.system())
+
+
+OOPS: Object oriented programming language 
+================================================================
+	1. OOP's is a programming paradigm that uses 'object' to design applications and programs.
+	2. Python supports OOPs 
+
+	class & Object 
+	------------------------------------------------
+	1. In Python, A class is a blue print for creating objects 
+	2. A class defines a set of attributes (variables) and Methods(functions) that the object created from the class can have.
+	3. It is a fundamental concept in oop that allows you to bundle data & functionality together.
+	
+	Eg:
+		Bike Company 
+		
+		class is bike blue print 
+		attribute : store data like cc, color etc 
+		methods : behaviour or action.
+		
+		
+	class AppleMobile:
+		x = 7
+		
+	class ClassName:
+		x = 100      # Attributes or variables  
+		
+		def add(self,a):     # method 
+			self.a = a 
+			print(self.a)	
+		
+		
+	Eg:
+		class AppleMobile:          # Class
+			x = 7
+			y = 10
+			z = x+y
+
+		obj = AppleMobile()         # Object
+
+		print(obj.x)
+		print(obj.y)
+		print(obj.z)
+		
+	EG:
+		class AppleMobile:   #class
+			x = 99    # attribute
+
+			def sampleMethod(self):   #Method
+				print("Apple mobile & Sample method")
+
+		obj = AppleMobile()    #Object
+		print(obj.x)  # Getting variable/Attributes from class
+		obj.sampleMethod()  # Calling method from class
+
+		
+
+	self:
+	------------------------
+	1. 'self' is a reference to the current instance of class.
+	2. self is not a reserved keyword in python.
+	
+	class AppleMobile:
+		x = 99
+
+		def sampleMethod(self,a):
+			self.x = a
+			print("value is ",self.x)
+
+	obj = AppleMobile()
+	obj.sampleMethod(10)
+	
+	Attributes:
+	----------------
+		Instance attributes:
+		--------------------
+		1. Attributes that a specific to each instance of class.
+		2. They are usually within constructor  or instance methods using 'self'
+		
+		eg:
+			class AppleMobile:
+
+				def sampleMethod(self):
+					self.x = 100      # instance attributes
+					print("Value x is ",self.x)
+
+			obj = AppleMobile()
+			obj.sampleMethod()
+		
+		
+		class attributes:
+		-------------------
+		Attributes are shared accross all instances of the class.
+		they are defined directly with in class body and outside of any instane methods.
+		
+		Eg:
+			class AppleMobile:
+				x = 10                 # Class Attributes
+
+				def sampleMethod(self):
+					print(self.x)
+
+			obj = AppleMobile()
+			print(obj.x)
+			obj.sampleMethod()
+
+
+	
+	Constructor:
+	-------------
+	1. Constructor is a special method used to initilize an object's state when it is created.
+	
+	2. The constructor method in python is called '__init__()' and it is automatically invoked when a new instanc of class is created.
+	
+	3. This method is tipically used to setup initial values for instance attributes and perform any setup actions needed when a onject is instantiated.
+	
+		a. constructor method is named '__init__'
+		b. it can take arguments, allowing you to pass data to the new object when it is created.
+		c. the first parameter of '__init__' is always 'self' which represents the instance being created.
+		
+	
+	Eg1:	
+		class Dog:
+
+			# Constructor
+			def __init__(self,name, breed, age):
+				self.name = name
+				self.breed = breed
+				self.age = age
+
+			# Method
+			def bark(self):
+				return f"{self.name} says woof!"
+
+		obj = Dog('Buddy', 'golden Retriver', 3)
+
+		print(obj.name)
+		print(obj.breed)
+		print(obj.age)
+		print(obj.bark())
+		
+	
+	Eg2:
+		class AppleMobile:
+
+			#constructor
+			def __init__(self,model, ram, rom):
+				self.model = model
+				self.ram = ram
+				self.rom = rom
+
+			# Method
+			def info(self):
+				print(self.model,self.ram, self.rom)
+
+		mob = AppleMobile('14pro', '8gb', '16gb')
+		mob.info()
+
+		mob1 = AppleMobile('14', '8GB', '12GB')
+		mob1.info()
+
+
+
+	Methods:
+	======================================================
+	-> Methods are similar to functions, but they are defined within a class and are meant to be called on objects (instances of the class). 
+	
+	-> The key difference between a function and a method is that a method always takes the instance (object) of the class it belongs to as its first parameter, which is typically named self.
+	
+	1. Instance Methods:    (self)
+	------------------------------
+		Instance methods operate on an instance of the class, meaning they can access and modify the instance attributes.
+		
+		
+		class MyClass():
+			def instance_method(self, value):
+				self.a = value
+				
+				
+		# Get Methods:
+		----------------
+			
+			# get Methods
+			class MyClass:
+				def get_method(self):
+					self.a = 10
+					return self.a
+				
+			obj = MyClass()
+			value = obj.get_method()
+			print(value)
+			
+		#Set Methods:
+		------------------
+		
+			# Set Methods
+			class MyClass:
+				def set_method(self,value):
+					self.a = value
+					print(self.a)
+
+			obj = MyClass()
+			obj.set_method(50)
+				
+				
+				
+	
+	
+	2. Class Methods:    cls 
+	---------------------------
+	
+	
+			# Set method
+			class MyClass:
+				class_attribute = 10
+
+				@classmethod
+				def class_method(cls,value):
+					cls.class_attribute = value
+					print(cls.class_attribute)   #20
+					return cls.class_attribute +500
+
+				def instance_method(self):
+					print(self.class_attribute)  # 20
+
+				print(class_attribute)   #10
+
+			obj = MyClass()
+
+			result = obj.class_method(20)
+			print(result)
+			obj.instance_method()
+
+
+	
+	
+	
+	3. Static Methods:     No self and No cls  
+	--------------------------------------------
+	static methods do not depend on the class or instance and cannot modify class or instance atrributes.
+	
+	@staticmethod   decorator.  don't take 'self' or 'cls'
+	
+	
+		class MyClass:
+			@staticmethod
+			def static_method(x,y):
+				return x+y 
+
+		obj = MyClass()
+		result = obj.static_method(30,25)
+		print(result)
+		print(obj.static_method(500,350))
+	
+
+
+Inheritance:
+==============================
+-> Inheritance is a fundamental concept in oops that allows a new class to inherit attributes and methods from existing class.
+
+-> Inheritance promotes code reuse and can help organize code into a hierarchy, where subclass can override or extend the functionality of the parent class.
+
+
+
+Eg:
+	class Parent:
+		def show(self):
+			return "Parent Method"
+
+		def show1(self):
+			return "show1 method in parent class"
+
+	class Child(Parent):
+		def show(self):
+			return "Child Method"
+
+	obj = Child()
+	print(obj.show())
+	print(obj.show1())
+
+
+Types of inheritance:
+----------------------
+	1. Single inheritance:
+	-----------------------
+		a clid class inherits from a single parent class.
+		
+		
+		eg:
+			class Parent:
+				def display(self):
+					return "display method in parent class"
+
+			class Child(Parent):
+				def display(self):
+					return "display method in child class"
+
+			obj = Child()
+
+			print(obj.display())
+	
+	2. Multiple inheritance 
+	-------------------------
+		A child class inherits from more than 1 parent class.
+		
+		EG:
+			class Father:
+				def father_method(self):
+					return "father method in father class"
+
+			class Mother:
+				def mother_method(self):
+					return "Mother method in mother class"
+
+			class Child(Father,Mother):
+				pass
+
+			obj = Child()
+			print(obj.father_method())
+			print(obj.mother_method())
+
+		
+	
+	
+	3. Multilevel Inheritance:
+	---------------------------
+		A sub class inherits from a parent class, which in turn inherits from another class, forming a chain
+		
+		Eg:
+			class GrantParent:
+				def grant_parent_method(self):
+					return "grant parent method"
+
+			class Parent(GrantParent):
+				def parent_method(self):
+					return "parent method"
+
+			class Child(Parent):
+				pass
+
+			obj = Child()
+			print(obj.parent_method())
+			print(obj.grant_parent_method())
+	
+	
+	
+	4. Heirarchical inheritance: 
+	----------------------------
+		Multiple sub classes inhert from a single parent class.
+		
+		Eg:
+			# Multiple child classes inhert parent class
+
+			class Parent:
+				def parent_method(self):
+					return "Parent Method in Parent Class"
+
+			class Child1(Parent):
+				def child1_method(self):
+					return "Child1 method"
+
+			class Child2(Parent):
+				def child2_method(self):
+					return "Child2 method"
+
+			obj1 = Child1()
+			obj2 = Child2()
+
+			print(obj1.parent_method())
+			print(obj2.parent_method())
+		
+	
+	5. Hybrid inheritance 
+	-----------------------
+	 A combination of two or more types of inheritance.
+	 
+	 It is mix of any of above types froma more complex inheritance structure.
+	 
+	 Eg:
+		class Parent:
+			def parent_method(self):
+				return "parent method"
+
+		class Child1(Parent):
+			def child1_method(self):
+				return "child1 method"
+
+		class Child2(Parent):
+			def child2_method(self):
+				return "child2 method"
+
+		class Child3(Child1, Child2):
+			def child3_method(self):
+				return "Child3 method"
+
+		obj = Child3()
+
+		print(obj.child3_method())
+		print(obj.child1_method())
+		print(obj.child2_method())
+		print(obj.parent_method())
+
+
+	
+
+Ploymorphism
+============================================
+-> It is a fundamental concept in oop.
+
+-> Ability of diffrent object to be treated as instance of the same class through a common interface.
+
+Key Aspects of Ploymorhism:
+--------------------------
+	1. Method Overriding:
+	-----------------------
+	A sub class can override methods of their parent class, allowing the same method name to perform a diffrent action depending on the object it is called.
+	
+	eg:
+		# Parent Class
+		class Animal:
+			def speak(self):
+				return "some generic sound"
+
+		# Child Class
+		class Dog(Animal):
+			# Override the speak method in subclass
+			def speak(self):
+				return "the dog barks"
+
+		# another child class
+		class Cat(Animal):
+			def speak(self):
+				return "Meow!"
+
+		# Function to demonstrate in polymorphism
+		def make_animal_speak(animal):
+			print(animal.speak())
+
+		cat_obj = Cat()
+		dog_obj = Dog()
+		animal = Animal()
+
+		make_animal_speak(cat_obj)
+		make_animal_speak(dog_obj)
+		make_animal_speak(animal)
+
+
+	2. Duck Typing:
+	------------------------
+	Python is dynamically typed, meaning it relies on 'duck typing', where an objects sutability is determined by the presence of an certian methods & properties, rather than the objects actual type.
+	
+	print(3+6)   ---> 9
+	
+	print("Python" + "Programming")  ----> PythonProgramming
+
+
